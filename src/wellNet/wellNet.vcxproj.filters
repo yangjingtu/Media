@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\AutoDo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\AutoDoT.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Lock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\TaskerT.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\ThreadPoolT.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Usr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\NetObj.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\NetObjBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\RcvBuf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\SndBuf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Sock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\StreamBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\StreamFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMng\gmtypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMng\AviObj.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMng\FileObj.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMng\gmavi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMng\gmavi_api.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Win32Def.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\BaseType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CommDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CommFunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DataType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DebugLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Frame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\MsgMapT.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Trash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\ProtoclsFY.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\AdapterBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\AdapterFY.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wellNet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Lock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\NetObj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\RcvBuf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\SndBuf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\Sock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\Usr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileMng\AviObj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileMng\gmavi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CommFun.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DebugLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Trash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Adapter\AdapterFY.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

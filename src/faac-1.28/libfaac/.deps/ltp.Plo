@@ -1,0 +1,69 @@
+ltp.lo ltp.o: ltp.c /usr/include/stdio.h /usr/include/_ansi.h \
+  /usr/include/sys/config.h \
+  /usr/lib/gcc/i686-pc-msys/3.4.4/include/stddef.h \
+  /usr/lib/gcc/i686-pc-msys/3.4.4/include/stdarg.h \
+  /usr/include/sys/reent.h /usr/include/_ansi.h /usr/include/sys/_types.h \
+  /usr/include/math.h /usr/include/machine/ieeefp.h frame.h ../config.h \
+  /usr/include/sys/types.h /usr/include/machine/types.h \
+  /usr/include/sys/features.h /usr/include/cygwin/types.h coder.h \
+  channels.h psych.h fft.h aacquant.h ../include/faaccfg.h ltp.h tns.h \
+  filtbank.h util.h /usr/include/stdlib.h /usr/include/memory.h \
+  /usr/include/string.h
+
+/usr/include/stdio.h:
+
+/usr/include/_ansi.h:
+
+/usr/include/sys/config.h:
+
+/usr/lib/gcc/i686-pc-msys/3.4.4/include/stddef.h:
+
+/usr/lib/gcc/i686-pc-msys/3.4.4/include/stdarg.h:
+
+/usr/include/sys/reent.h:
+
+/usr/include/_ansi.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/math.h:
+
+/usr/include/machine/ieeefp.h:
+
+frame.h:
+
+../config.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/sys/features.h:
+
+/usr/include/cygwin/types.h:
+
+coder.h:
+
+channels.h:
+
+psych.h:
+
+fft.h:
+
+aacquant.h:
+
+../include/faaccfg.h:
+
+ltp.h:
+
+tns.h:
+
+filtbank.h:
+
+util.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/memory.h:
+
+/usr/include/string.h:

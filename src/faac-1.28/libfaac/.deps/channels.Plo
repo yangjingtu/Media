@@ -1,0 +1,29 @@
+channels.lo channels.o: channels.c channels.h coder.h util.h \
+  /usr/include/stdlib.h /usr/include/_ansi.h /usr/include/sys/config.h \
+  /usr/lib/gcc/i686-pc-msys/3.4.4/include/stddef.h \
+  /usr/include/sys/reent.h /usr/include/_ansi.h /usr/include/sys/_types.h \
+  /usr/include/memory.h /usr/include/string.h
+
+channels.h:
+
+coder.h:
+
+util.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/_ansi.h:
+
+/usr/include/sys/config.h:
+
+/usr/lib/gcc/i686-pc-msys/3.4.4/include/stddef.h:
+
+/usr/include/sys/reent.h:
+
+/usr/include/_ansi.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/memory.h:
+
+/usr/include/string.h:

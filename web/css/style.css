@@ -1,0 +1,33 @@
+BODY {
+    MARGIN: 2px 2px 2px;
+    padding: 0px 0px 0px 0px;
+}
+
+table 
+{
+   border-collapse:collapse; 
+   border:solid 1px Black;
+}
+
+#all TD {
+    FONT-SIZE: 12px;
+    LINE-HEIGHT: 15px;
+    FONT-FAMILY: "Verdana";
+}
+
+INPUT, SELECT, P {
+    FONT-SIZE: 12px;
+    LINE-HEIGHT: 15px;
+    FONT-FAMILY: "Verdana";
+}
+
+#all A:hover {
+    COLOR: #0066CC;
+}
+
+BUTTON{
+ background:url(play.png) no-repeat;
+ border:0px;
+ cursor:pointer;
+}
+

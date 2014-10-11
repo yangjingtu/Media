@@ -1,0 +1,23 @@
+LIBRARY	"Audio"
+
+EXPORTS
+	CreatePlayDev
+	OpenPlayDev
+	SetPlayParam
+	WriteData
+	ClosePlayDev
+	PausePlay
+	RestartPlay
+	CreatePlayDev2
+	OpenPlayDev2
+	WriteData2
+	ClosePlayDev2
+	
+	;
+	CreateRecDev
+	OpenRecDev
+	SetRecParam
+	CloseRecDev
+	StopRecDev
+	RestartRecDev
+	SetRecDataCallback

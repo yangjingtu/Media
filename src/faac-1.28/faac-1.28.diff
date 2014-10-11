@@ -1,0 +1,89 @@
+diff -urN faac-1.28.orig/common/mp4v2/mpeg4ip_win32.h faac-1.28/common/mp4v2/mpeg4ip_win32.h
+--- faac-1.28.orig/common/mp4v2/mpeg4ip_win32.h	Sun Jan 25 10:14:34 2009
++++ faac-1.28/common/mp4v2/mpeg4ip_win32.h	Wed Feb 11 11:38:32 2009
+@@ -42,26 +42,39 @@
+ #include <stdlib.h>
+ #include <time.h>
+ #include <limits.h>
++#include <ctype.h>
+ 
+ #ifndef inline
+ #define inline __inline
+ #endif
++
++#ifdef HAVE_STDINT_H
++#include <stdint.h>
++#else
+ typedef unsigned __int64 uint64_t;
+ typedef unsigned __int32 uint32_t;
+ typedef unsigned __int16 uint16_t;
+ typedef unsigned __int8 uint8_t;
+-typedef unsigned __int64 u_int64_t;
+-typedef unsigned __int32 u_int32_t;
+-typedef unsigned __int16 u_int16_t;
+-typedef unsigned __int8 u_int8_t;
+ typedef signed __int64 int64_t;
+ typedef signed __int32 int32_t;
+ typedef signed __int16 int16_t;
+ typedef signed __int8  int8_t;
++#endif
++typedef unsigned __int64 u_int64_t;
++#ifndef HAVE_U_INT32_T
++#define HAVE_U_INT32_T
++typedef unsigned __int32 u_int32_t;
++#endif
++#ifndef HAVE_U_INT16_T
++#define HAVE_U_INT16_T
++typedef unsigned __int16 u_int16_t;
++#endif
++typedef unsigned __int8 u_int8_t;
+ typedef unsigned short in_port_t;
+ typedef int socklen_t;
+-typedef int ssize_t;
++/*typedef int ssize_t;*/
+ typedef unsigned int uint;
++/*
+ static inline int snprintf(char *buffer, size_t count,
+ 			  const char *format, ...) {
+   va_list ap;
+@@ -75,11 +88,14 @@
+   }
+   return ret;
+ }
++*/
+ #define strncasecmp _strnicmp
+ #define strcasecmp _stricmp
+ #define localtime_r(a,b) localtime_s(b,a)
++/*
+ #define printf printf_s
+ #define fprintf fprintf_s
++*/
+ 
+ #include <io.h>
+ #include <fcntl.h>
+@@ -124,8 +140,13 @@
+ #define U64F  "I64u"
+ #define X64F "I64x"
+ 
++#if defined(__WINDOWS__) && !defined(__MINGW32__)
+ #define TO_D64(a) (a##I64)
+ #define TO_U64(a) (a##UI64)
++#else
++#define TO_D64(a) (a##LL)
++#define TO_U64(a) (a##ULL)
++#endif
+ 
+ #define LOG_EMERG 0
+ #define LOG_ALERT 1
+diff -urN faac-1.28.orig/frontend/Makefile.am faac-1.28/frontend/Makefile.am
+--- faac-1.28.orig/frontend/Makefile.am	Tue Dec 16 09:56:00 2008
++++ faac-1.28/frontend/Makefile.am	Wed Feb 11 12:29:18 2009
+@@ -5,7 +5,7 @@
+ 
+ if WITH_MP4V2
+ INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/common/mp4v2
+-LDADD = $(top_builddir)/libfaac/libfaac.la $(top_srcdir)/common/mp4v2/libmp4v2.a -lm -lstdc++
++LDADD = $(top_builddir)/libfaac/libfaac.la $(top_srcdir)/common/mp4v2/libmp4v2.a -lm -lstdc++ -lws2_32
+ else
+ INCLUDES = -I$(top_srcdir)/include 
+ LDADD = $(top_builddir)/libfaac/libfaac.la -lm

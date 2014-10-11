@@ -1,0 +1,76 @@
+// fsNVRPlugin.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(fsNVRPlugin.tlb)，该类型库将成为
+// fsNVRPlugin.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(7268A885-F493-46F2-8DED-F061625C78BA), version(1.0),
+  helpfile("fsNVRPlugin.hlp"),
+  helpstring("fsNVRPlugin ActiveX 控件模块"),
+  control ]
+library fsNVRPluginLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CfsNVRPluginCtrl 的主调度接口
+
+	[ uuid(83DDB94A-2188-4895-BC62-AFFEE1A4A59E),
+	  helpstring("fsNVRPlugin Control 的调度接口")]
+	dispinterface _DfsNVRPlugin
+	{
+		properties:
+		methods:
+			[id(1), helpstring("方法test")] void test(void);
+			[id(2), helpstring("方法SetWndStyle")] void SetWndStyle(LONG style, LONG CHNum);
+			[id(3), helpstring("方法ChangePage")] void ChangePage(LONG bNext);
+			[id(4), helpstring("方法Polling")] void Polling(void);
+			[id(5), helpstring("方法FullScreen")] void FullScreen(void);
+			[id(6)] SHORT OpenMedia(BSTR bstrPath, SHORT nType);
+			[id(7)] SHORT CloseMedia(SHORT nWndIndex);
+			[id(8)] VARIANT_BOOL Play(void);
+			[id(9)] VARIANT_BOOL Pause(void);
+			[id(10)] VARIANT_BOOL Stop(void);
+			[id(11)] VARIANT_BOOL Forward(SHORT nSpeed);
+			[id(12)] VARIANT_BOOL Reverse(SHORT nSpeed);
+			[id(13)] void PreFrame(void);
+			[id(14)] void NextFrame(void);
+			[id(15)] VARIANT_BOOL Seek(LONG lPos, LONG minVal, LONG maxVal);
+			[id(16)] SHORT Snap(BSTR savePath);
+			[id(17)] VARIANT_BOOL SetSelectWnd(SHORT nWndIndex);
+			[id(18)] SHORT SetWndChannels(SHORT nWndId, SHORT nChannels);
+			[id(19)] SHORT Exit(void);
+			[id(20)] void GetPlayPos(LONG* curPos, LONG* nTotalFrames);
+			[id(21)] LONG GetCurPos(void);
+			[id(22)] LONG GetTotalFrames(void);
+			[id(23)] SHORT SetWndChannelSelect(SHORT nWndIndex, SHORT nChannel);
+			[id(24)] SHORT GetWndChannelSelect(SHORT nWndIndex);
+			[id(25)] SHORT GetWndChannelCount(SHORT nWndIndex);
+	};
+
+	//  CfsNVRPluginCtrl 的事件调度接口
+
+	[ uuid(A89C02DB-6452-43F4-9465-EABC6B7C8BD8),
+	  helpstring("fsNVRPlugin Control 的事件接口") ]
+	dispinterface _DfsNVRPluginEvents
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+			[id(1)] void OnTwoWndSwap(LONG newWndId, LONG oldWndId);
+	};
+
+	//  CfsNVRPluginCtrl 的类信息
+
+	[ uuid(35EA3D63-87A2-4F31-A596-A1DF7933DFA5),
+	  helpstring("fsNVRPlugin Control"), control ]
+	coclass fsNVRPlugin
+	{
+		[default] dispinterface _DfsNVRPlugin;
+		[default, source] dispinterface _DfsNVRPluginEvents;
+	};
+
+};

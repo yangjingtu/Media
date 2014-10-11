@@ -1,0 +1,32 @@
+util.lo util.o: util.c /usr/include/math.h /usr/include/sys/reent.h \
+  /usr/include/_ansi.h /usr/include/sys/config.h \
+  /usr/include/sys/_types.h /usr/include/machine/ieeefp.h \
+  /usr/include/_ansi.h util.h /usr/include/stdlib.h \
+  /usr/lib/gcc/i686-pc-msys/3.4.4/include/stddef.h /usr/include/memory.h \
+  /usr/include/string.h coder.h
+
+/usr/include/math.h:
+
+/usr/include/sys/reent.h:
+
+/usr/include/_ansi.h:
+
+/usr/include/sys/config.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/ieeefp.h:
+
+/usr/include/_ansi.h:
+
+util.h:
+
+/usr/include/stdlib.h:
+
+/usr/lib/gcc/i686-pc-msys/3.4.4/include/stddef.h:
+
+/usr/include/memory.h:
+
+/usr/include/string.h:
+
+coder.h:

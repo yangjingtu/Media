@@ -1,0 +1,65 @@
+﻿Build started 9/9/2014 6:49:38 AM.
+     1>Project "D:\Program\MinGW\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\libfaac_dll.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBFAAC_DLL_EXPORTS /D _VC80_UPGRADE=0x0700 /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc110.pdb" /Gd /TC /analyze- /errorReport:prompt aacquant.c backpred.c bitstream.c channels.c fft.c filtbank.c frame.c huffman.c ltp.c midside.c psychkni.c tns.c util.c
+         aacquant.c
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\aacquant.c(198): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\aacquant.c(337): warning C4307: '*' : integral constant overflow
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\aacquant.c(337): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\aacquant.c(446): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\aacquant.c(447): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\aacquant.c(602): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\aacquant.c(614): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         backpred.c
+         bitstream.c
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\bitstream.c(122): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\bitstream.c(124): warning C4013: 'strlen' undefined; assuming extern returning int
+         channels.c
+         fft.c
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\fft.c(614): warning C4244: '=' : conversion from 'double' to 'fftfloat', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\fft.c(615): warning C4244: '=' : conversion from 'double' to 'fftfloat', possible loss of data
+         filtbank.c
+         frame.c
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\frame.c(235): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\frame.c(241): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\frame.c(242): warning C4244: '=' : conversion from 'double' to 'unsigned long', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\frame.c(245): warning C4018: '>' : signed/unsigned mismatch
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\frame.c(330): warning C4244: '=' : conversion from 'const double' to 'unsigned int', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\frame.c(331): warning C4018: '>' : signed/unsigned mismatch
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\frame.c(533): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\frame.c(545): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\frame.c(557): warning C4018: '<' : signed/unsigned mismatch
+         huffman.c
+         ltp.c
+         midside.c
+         psychkni.c
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\psychkni.c(346): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>d:\program\mingw\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\psychkni.c(393): warning C4244: '=' : conversion from 'double' to 'psyfloat', possible loss of data
+         tns.c
+         util.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1137,5): warning MSB8012: TargetPath(D:\Program\MinGW\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\.\DebugDLL\libfaac_dll.dll) does not match the Linker's OutputFile property value (D:\Program\MinGW\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\DebugDLL\libfaac.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1139,5): warning MSB8012: TargetName(libfaac_dll) does not match the Linker's OutputFile property value (libfaac). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         D:\Program\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"DebugDLL/libfaac.dll" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\libfaac.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\DebugDLL/libfaac.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\DebugDLL/libfaac.lib" /MACHINE:X86 /SAFESEH /MACHINE:I386 /DLL .\Debug/aacquant.obj
+         .\Debug/backpred.obj
+         .\Debug/bitstream.obj
+         .\Debug/channels.obj
+         .\Debug/fft.obj
+         .\Debug/filtbank.obj
+         .\Debug/frame.obj
+         .\Debug/huffman.obj
+         .\Debug/ltp.obj
+         .\Debug/midside.obj
+         .\Debug/psychkni.obj
+         .\Debug/tns.obj
+         .\Debug/util.obj
+     1>aacquant.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library .\DebugDLL/libfaac.lib and object .\DebugDLL/libfaac.exp
+         libfaac_dll.vcxproj -> D:\Program\MinGW\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\.\DebugDLL\libfaac_dll.dll
+     1>Done Building Project "D:\Program\MinGW\msys\1.0\home\yjt\ffmpeg\faac-1.28\libfaac\libfaac_dll.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.45

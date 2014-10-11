@@ -1,0 +1,115 @@
+<html style="height: 100%; width: 100%">
+<head>
+    <title>交警后台管理系统</title>
+    
+    <link href="css\style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js" ></script>
+    <script type="text/javascript" src="js/public-class.js"></script>
+    <script type="text/javascript" src="js/classMedia.js"></script>
+    <script type="text/javascript" src="js/playbar_cmd.js"></script>
+    <script type="text/ecmascript" src="js/hk.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+	<script language="javascript" type="text/javascript">
+		$(function(){
+			var isIE = true;
+			function DownPluginTip(){}
+			
+			WebInit(DownPluginTip, isIE);
+			
+			setWndNum(1);
+		});
+		</script>
+	
+    <style>
+        .drag {
+            CURSOR: hand;
+            POSITION: relative;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <table style="height: 100%; width: 100%">
+        <tr style="height: 95%">
+            <td>
+	
+                <object id="ocx" width="100%" height="100%"
+                    classid="CLSID:35EA3D63-87A2-4F31-A596-A1DF7933DFA5">
+                    <param name="_Version" value="65536">
+                    <param name="_ExtentX" value="2117">
+                    <param name="_ExtentY" value="1058">
+                    <param name="_StockProps" value="0">
+                    <param name="MaxChannel" value="100">
+                    <param name="CurChannel" value="100">
+                    <param name="CurStyle" value="100">
+                </object>
+	
+        <!--
+		<div id="ipcamdiv0" style="float:left;height:0;width:0;background:#000">
+    		<object style="display:block" width="100%" height="100%" name="0"
+        		id="ocx" classid="clsid:3746422E-4692-4429-9698-E3EB34FE07BC">
+            	<param name="Self" value="0" />
+        	</object>
+        </div>
+        -->
+	
+            </td>
+        </tr>
+        <tr style="height: 5%">
+            <td>
+                <div style="width:100%;height:100%">
+                    <table border="0" cellpadding="0" cellspacing="0" id="playbar" style="width: 100%;height:100%">
+                        <tr>
+                            <td style="width: 30px">
+                                <input type="button" id="btn_play" title="播放" value="play" onClick="play()" />
+                            </td>
+                            <td style="width: 30px">
+                                <input type="button" id="btn_pause" title="暂停" value="pause" onClick="pause()" />
+                            </td>
+                            <td style="width: 30px">
+                                <input type="button" id="btn_stop" title="停止" value="stop" onClick="stop()"/>
+                            </td>
+                            <td style="width: 30px">
+                                <input type="button" id="btn_reverse" title="快退" value="reverse" onClick="reverse(1)" />
+                            </td>
+                            <td style="width: 30px">
+                                <input type="button" id="btn_preframe" title="前一帧" value="PreF" onClick="preframe(1)" />
+                            </td>
+                            <td>
+                                <div id="outerLyr" style="Z-INDEX: 1; LEFT: 0px; WIDTH: 100%; POSITION: relative; TOP: 0px; HEIGHT: 23px; BACKGROUND-COLOR: #000000"  onClick="clickLayer">
+                                    <img class="drag" id="knobImg" style="Z-INDEX: 3; LEFT: 2px; WIDTH: 20px; TOP: 2px; HEIGHT: 21px" />
+                                    <div id="innerLyr" style="Z-INDEX: 2; LEFT: 5px; WIDTH: 98%; POSITION: absolute; TOP: 2px; HEIGHT: 20px; BACKGROUND-COLOR: #777777">
+                                        <div id="barLyr" style="Z-INDEX: 1; LEFT: 5px; WIDTH: 98%; POSITION: absolute; TOP: 9px; HEIGHT: 2px; BACKGROUND-COLOR: #000000" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 50px">
+                                <div id="time"></div>
+                            </td>
+                            <td style="width: 30px">
+                                <input type="button" id="btn_forward" title="快进" value="Forwar" onClick="forward()" />
+                            </td>
+                            <td style="width: 30px">
+                                <input type="button" id="btn_nextframe" title="后一帧" value="NextF" onClick="nextframe()" />
+                            </td>
+                            <td style="width: 30px">
+                                <input id="num" type="text" />
+                            </td>
+                            <td style="width: 30px">
+                                <input type="button" id="btnNum" title="窗口数" value="SetWnd" onClick="setWndNum(num.value)" />
+                            </td>
+                            <td style="width: 30px">
+                                <input type="button" id="btn_fullscreen" title="全屏" value="fullscreen" onClick="fullscreen()" />
+                            </td>
+                            <td style="width: 30px">
+                                <input type="button" id="btnSnap" title="抓图" value="snap" onClick="snap('d:\snap.jpg')" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
